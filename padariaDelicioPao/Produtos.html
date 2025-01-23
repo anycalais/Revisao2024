@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo2.png" type="image/png" />
+    <!-- Ícone -->
+    <title>Padaria Delicio Pão</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      footer {
+        background: #174632;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+      .btn {
+        background-color: #174632;
+        color: white;
+      }
+      header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header .logo {
+        display: flex;
+        align-items: center;
+      }
+      header .logo h1 {
+        font-family: "Dancing Script", cursive;
+        font-size: 2.5em;
+        margin-left: 10px;
+      }
+      header .logo-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      .cardapio-item {
+        margin-bottom: 30px;
+      }
+      .cardapio-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .cardapio-item h3 {
+        margin-top: 10px;
+      }
+      .cardapio-item p {
+        font-size: 1em;
+        color: #555;
+      }
+      .cardapio-item .preco {
+        font-size: 1.2em;
+        color: #000000;
+        font-weight: bold;
+      }
+      .card {
+        color: #174632;
+      }
+      
+    </style>
+  </head>
+  <body>
+    
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <div class="logo">
+            <img src="img/logo3.png" alt="Logo da Padaria" class="logo-img" />
+          </div>
+          <a class="navbar-brand" href="#">Padaria Delicio Pão</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Produtos.html">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="QuemSomos.html">Sobre nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contato.html">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Cardápio -->
+    <section id="card" class="container my-5">
+      <h2 class="text-center mb-4">Nosso Cardápio</h2>
+      <div class="row">
+        <!-- Item 1 -->
+        <div class="col-md-4 cardapio-item">
+          <div class="card">
+            <img src="img/p2.jpg" alt="Pão Francês" />
+            <div class="card-body">
+              <h3 class="card-title">Pão Francês</h3>
+              <p class="card-text">
+                O tradicional pãozinho fresquinho, perfeito para o café da
+                manhã.
+              </p>
+              <p class="preco">R$ 1,69/ un</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="col-md-4 cardapio-item">
+          <div class="card">
+            <img src="img/c1.jpg" alt="Croissant" />
+            <div class="card-body">
+              <h3 class="card-title">Croissant</h3>
+              <p class="card-text">
+                Crocante por fora e macio por dentro, com recheio de chocolate
+                ou queijo.
+              </p>
+              <p class="preco">R$ 7,90/ un</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="col-md-4 cardapio-item">
+          <div class="card">
+            <img src="img/b1.jpg" alt="Baguete" />
+            <div class="card-body">
+              <h3 class="card-title">Baguete</h3>
+              <p class="card-text">
+                Longa e crocante, ideal para sanduíches e acompanhamentos.
+              </p>
+              <p class="preco">R$ 11,94/ un</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="col-md-4 cardapio-item">
+            <div class="card">
+              <img src="img/7.jpg" alt="Biscoito" />
+              <div class="card-body">
+                <h3 class="card-title">Biscoito Meia Lua</h3>
+                <p class="card-text">
+                    Biscoito Meia Lua, de polvilho, feito com queijo minas.
+                </p>
+                <p class="preco">R$ 7,20/ un</p>
+              </div>
+            </div>
+          </div>
+           <!-- Item 5 -->
+        <div class="col-md-4 cardapio-item">
+            <div class="card">
+              <img src="img/8.jpg" alt="Bolo Formigueiro" />
+              <div class="card-body">
+                <h3 class="card-title">Bolo Formigueiro</h3>
+                <p class="card-text">
+                    O Bolo Formigueiro é uma massa tradicional de bolo caseiro com granulados de chocolate.
+                </p>
+                <p class="preco">R$ 19,99/ un</p>
+              </div>
+            </div>
+          </div>
+           <!-- Item 6 -->
+        <div class="col-md-4 cardapio-item">
+            <div class="card">
+              <img src="img/9.jpg" alt="Bolo de cenoura" />
+              <div class="card-body">
+                <h3 class="card-title">Bolo de Cenoura</h3>
+                <p class="card-text">
+                    Nosso tradicional Bolo de Cenoura é muito fofinho e coberto com a mais deliciosa cobertura de chocolate.
+                </p>
+                <p class="preco">R$ 27,90/ un</p>
+              </div>
+            </div>
+          </div>
+          <!-- Item 7 -->
+        <div class="col-md-4 cardapio-item">
+            <div class="card">
+              <img src="img/10.jpg" alt="Pão doce" />
+              <div class="card-body">
+                <h3 class="card-title">Pão Doce Tradicional</h3>
+                <p class="card-text">
+                    O Pão Doce é preparado artesanalmente. Pão de massa doce tradicional.
+                </p>
+                <p class="preco">R$ 11,60/ 4 un.</p>
+              </div>
+            </div>
+          </div>
+        <!-- Item 8 -->
+        <div class="col-md-4 cardapio-item">
+          <div class="card">
+            <img src="img/6.jpg" alt="Brownie" />
+            <div class="card-body">
+              <h3 class="card-title">Brownie de doce de leite</h3>
+              <p class="card-text">
+                Feito com doce de leite, cremoso e saboroso.
+Perfeito para qualquer ocasião.
+              </p>
+              <p class="preco">R$ 12,98/ un</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 9 -->
+        <div class="col-md-4 cardapio-item">
+          <div class="card">
+            <img src="img/5.jpg" alt="Torta de Chocolate" />
+            <div class="card-body">
+              <h3 class="card-title">Torta de Chocolate</h3>
+              <p class="card-text">
+                Elaborada com pão de lo de chocolate, recheio de brigadeiro preto.
+              </p>
+              <p class="preco">R$ 79,90/ un</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <p class="mb-0">
+        © 2025 Padaria Delicio Pão. Todos os direitos reservados.
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
